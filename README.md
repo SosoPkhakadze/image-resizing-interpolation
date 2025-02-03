@@ -32,7 +32,7 @@ Image resizing is a fundamental operation in image processing. Interpolation alg
 1. **Clone the Repository:**
 
     ```bash
-    git clone <your-github-repository-url>
+    git clone https://github.com/SosoPkhakadze/image-resizing-interpolation
     cd image-resizing-interpolation
     ```
 
@@ -70,9 +70,11 @@ The project includes examples of resizing an image of clouds and a test image wi
 
 Error metrics (MAE, RMSE, L2 Norm) are calculated and printed in the console when running `bicubic.py` and `bilinear.py`. These metrics provide a quantitative measure of the difference between the original and resized images.
 
-**Example using `2nabiji.png` and comparison:**
+“Original Image vs. After 100 Cycles” - for Clouds and for distinct colors.
 
-\[Insert here two images from your provided files: “Original Image vs. After 100 Cycles” - for Clouds and for distinct colors.]
+![image](https://github.com/user-attachments/assets/d238da82-8f57-4e3e-87ac-d300125b88ec)
+
+![image](https://github.com/user-attachments/assets/1c54bf9d-1d65-433f-b874-7e47efe181b2)
 
 It can be seen that on image with distinct colors the degradation is not as much visible as on clouds image. This occurs because the interpolation algorithms calculates changes between pixels and when there are large number of distinct colors image tends to keep the initial quality better.
 
@@ -80,7 +82,17 @@ The example images of numbers (original, bilinear, bicubic) also demonstrate the
 
 **Example using `2nabiji.png` of number and comparison:**
 
-\[Insert here 3 images from your provided files: original, bilinear, and bicubic, and then press `2` and `3` buttons to see the difference as you suggested before]
+original, bilinear, and bicubic, and then press `2` and `3` buttons to see the difference
+
+original:
+![image](https://github.com/user-attachments/assets/1847eb50-77ec-4e89-9079-0a50339b8e74)
+
+bilinear:
+![image](https://github.com/user-attachments/assets/410f5349-fb29-4a51-863a-567e6eecc258)
+
+bicubic:
+![image](https://github.com/user-attachments/assets/218e59a4-4777-482a-9674-b79e0e230e17)
+
 
 You may find difficult to see a huge difference between bilinear and bicubic methods, however, if you run a comparison file and press buttons `2` (for bilinear) and `3` (for bicubic) it can be observed that bicubic interpolation creates a smoother and more aesthetically pleasing result.
 
